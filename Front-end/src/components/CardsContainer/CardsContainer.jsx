@@ -64,7 +64,7 @@ export const CardsContainer = () => {
 										miniaturaCurso={e.miniaturaCurso}
 									/>
 								);
-						  })
+						})
 						: data.cursos.slice(0, 6).map((e) => {
 								return (
 									<CardComponent

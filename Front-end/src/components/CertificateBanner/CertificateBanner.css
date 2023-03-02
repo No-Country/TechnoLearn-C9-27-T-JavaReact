@@ -2,9 +2,9 @@
 	height: 800px;
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	/* justify-content: space-evenly; */
 }
-
+/* poner a partir de 500px mas chico y achicar el texto de titulo */
 .certificate-svg {
 	max-width: 390px;
 }
@@ -39,4 +39,35 @@
 	display: flex;
 	align-items: center;
 	gap: 0.8em;
+}
+@media (max-width: 400px) {
+	.certificate-svg {
+		max-width: 150px;
+		/* height: 900px; */
+	}
+	.certificate-title {
+		text-align: center;
+		font-size: 15px;
+		font-weight: 700;
+	}
+	.certificate-text {
+		font-size: 32px;
+		width: 100vw;
+	}
+}
+
+@media (max-width: 1024px) {
+	.certificate-container {
+		width: 100vw;
+		height: 100vh;
+	flex-direction: column;
+	}
+	.certificate-title {
+		text-align: center;
+		font-size: 35px;
+		font-weight: 700;
+	}
+	.certificate-svg {
+		max-width: 250px;
+	}
 }

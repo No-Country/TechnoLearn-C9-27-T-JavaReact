@@ -1,82 +1,154 @@
 .testimonial-container {
-	position: relative;
-	background-color: #fff;
-	height: 600px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  position: relative;
+  background-color: #fff;
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .testimonial-title {
-	font-size: 56px;
-	font-weight: 700;
+  font-size: 56px;
+  font-weight: 700;
 }
 
 .testimonial-content {
-	position: relative;
-	width: 900px;
-	height: 300px;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .testimonial-img-container img {
-	object-fit: cover;
-	height: 100px;
-	width: 100px;
-	margin-bottom: 10px;
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
+  object-fit: cover;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .testimonial-text-content {
-	width: 545px;
-	font-size: 32px;
-	font-weight: 300;
-	font-style: italic;
+  width: 545px;
+  font-size: 32px;
+  font-weight: 300;
+  font-style: italic;
 }
-
+/* circulos centrales */
 .slider-btn-test {
-	position: absolute;
-	top: 50%;
-	height: 72px;
-	width: 72px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 50px;
-	color: var(--tertiaryColor);
-	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  height: 72px;
+  width: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: var(--tertiaryColor);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 
 .prev-btn {
-	left: -10%;
+  left: -10%;
 }
 .next-btn {
-	right: -10%;
+  right: -10%;
 }
 
 .slider-mark-test {
-	width: 25px;
-	height: 25px;
-	background-color: var(--backgroundColor);
-	border: 2px solid var(--tertiaryColor);
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: var(--backgroundColor);
+  border: 2px solid var(--tertiaryColor);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .slider-mark-test.active {
-	background-color: var(--secondaryColor);
+  background-color: var(--secondaryColor);
 }
+
+@media (max-width: 375px) {
+  .testimonial-title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .testimonial-text-content {
+    width: 80%;
+    font-size: 10px;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .prev-btn {
+    display: none;
+  }
+  .next-btn {
+    display: none;
+  }
+  .testimonial-img-container img {
+	height: 50px;
+	width: 50px;
+  }
+  .testimonial-img-container {
+	margin-right:20px
+  }
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+  .prev-btn {
+    display: none;
+  }
+  .next-btn {
+    display: none;
+  }
+  .testimonial-img-container img {
+	
+	height: 50px;
+	width: 50px;
+  }
+  .testimonial-text-content {
+    width: 80%;
+    font-size: 10px;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .testimonial-img-container {
+	margin-right:20px
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .testimonial-title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .testimonial-text-content {
+    width: 80%;
+    font-size: 10px;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .prev-btn {
+    display: none;
+  }
+  .next-btn {
+    display: none;
+  }
+}
+
+

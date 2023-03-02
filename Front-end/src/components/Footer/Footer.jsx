@@ -6,7 +6,7 @@ import './Footer.css';
 function Footer() {
 	return (
 		<footer className='footer'>
-			<div>
+			<div className='footer-text'>
 				<p>Políticas de Privacidad</p>
 				<p>Derechos Reservados</p>
 			</div>

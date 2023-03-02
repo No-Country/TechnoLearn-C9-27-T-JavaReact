@@ -1,5 +1,6 @@
 .about-container {
 	height: 734px;
+	width: 100vw;
 	background-color: var(--tertiaryColor);
 	color: #fff;
 	display: flex;
@@ -37,4 +38,18 @@
 
 .about-text-highlight {
 	color: var(--warningColor);
+}
+
+@media (max-width: 650px) {
+	.about-container {
+		flex-direction: column;
+	}
+	.about-text {
+		font-size: 15px;
+		margin-bottom: .5em;
+		width: 100vw;
+	}
+	.about-svg {
+		width: 200px;
+	}
 }

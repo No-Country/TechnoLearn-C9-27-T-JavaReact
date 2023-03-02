@@ -92,3 +92,37 @@
 	text-align: center;
 	margin-bottom: 2em;
 }
+
+@media (max-width: 1020px){
+	.prev {
+		display:none;
+	}
+	.next {
+		display:none;
+	}
+	.slider-title {
+		font-size: 30px;
+	}
+	.slider-subtitle {
+		font-size: 20px;
+	}
+	.slider-text {
+		font-size: 20px;
+	}
+}
+
+@media(max-width:670px){
+	.slider-content {
+		width: 100vw;
+	}
+	.slider-title {
+		font-size: 15px;
+	}
+	.slider-subtitle {
+		font-size: 15px;
+	}
+	.slider-text {
+		font-size: 15px;
+	}
+	
+}

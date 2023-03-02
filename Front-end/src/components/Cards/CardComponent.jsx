@@ -62,7 +62,7 @@ const CardComponent = ({
 	}, [isSuccess]);
 
 	return (
-		<div className='card-container'>
+		<div className='card-container '>
 			<div className='card-img-container'>
 				<BsFillPlayCircleFill className='btn-play' />
 				<img src={miniaturaCurso} alt='FOTO' />
